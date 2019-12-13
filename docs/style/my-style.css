@@ -2,30 +2,52 @@ body {
     width: 75%;
     margin: auto;
 }
-#app > div {
-    text-align: justify;
-}
 
 #app > div:nth-of-type(1) { 
     text-align: center;
- }
+}
 
-#app > div:nth-of-type(2), #app > h1:nth-of-type(2) { 
+#sample-text > div {
+    text-align: justify;
+}
+#sample-text > div:nth-of-type(1), #sample-text > h1:nth-of-type(1) { 
     font-weight: normal;
     font-style: normal;
  }
 
- #app > div:nth-of-type(3), #app > h1:nth-of-type(3) { 
+ #sample-text > div:nth-of-type(2), #sample-text > h1:nth-of-type(2) { 
     font-weight: bold;
     font-style: normal;
  }
 
- #app > div:nth-of-type(4), #app > h1:nth-of-type(4) { 
+ #sample-text > div:nth-of-type(3), #sample-text > h1:nth-of-type(3) { 
     font-weight: normal;
     font-style: italic;
  }
 
- #app > div:nth-of-type(5), #app > h1:nth-of-type(5) { 
+ #sample-text > div:nth-of-type(4), #sample-text > h1:nth-of-type(4) { 
     font-weight: bold;
     font-style: italic;
  }
+
+ #custom-text {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+ }
+#custom-text > textarea {
+    width: 50%;
+    height: 100%;
+    float: left;
+    resize: none;
+    border: 0px solid black;
+    border-right: 1px solid black;
+}
+
+#custom-text > div {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 0px solid black;
+}

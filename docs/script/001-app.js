@@ -4,6 +4,7 @@ var app = new Vue({
         uCounter: 0,
         ipsum: new LoremIpsum(),
         sFont: "0",
+        cText: "You can edit this text to test the selected font.",
         fonts: {
             'cmun-bright': "Computer Modern Bright",
             'cmun-bright-semibold': "Computer Modern Bright Semibold",
