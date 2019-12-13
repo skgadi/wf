@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fonts</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style/my-style.min.css">
+</head>
+
+<body>
+    <h1>Test the available fonts</h1>
+    <div id="app">
+        <div>
+            <hr/>
+            <select>
+                <option>adf</option>
+                <option>ad2f</option>
+                <option>ad4sf</option>
+            </select> <button @click="uCounter++">Refresh</button>
+            <hr/>
+        </div>
+
+        <h1>Normal</h1>
+        <div :key="'N_' + uCounter">{{paraText()}}</div>
+        <h1>Bold</h1>
+        <div :key="'B_' + uCounter">{{paraText()}}</div>
+        <h1>Italics</h1>
+        <div :key="'I_' + uCounter">{{paraText()}}</div>
+        <h1>Bold + Italics</h1>
+        <div :key="'BI_' + uCounter">{{paraText()}}</div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="others-script.min.js"></script>
+    <script src="script.min.js"></script>
+</body>
+
+</html>
