@@ -37,7 +37,6 @@ var app = new Vue({
                 head.appendChild(link);
             }
             document.getElementById("app").style.fontFamily = "\"" + this.fonts[cssId] + "\"";
-            console.log(this.fonts[cssId]);
         }
     },
     computed: {
