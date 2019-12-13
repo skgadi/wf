@@ -12,20 +12,19 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style/my-style.min.css">
 </head>
 
 <body>
-    <h1>Test the available fonts</h1>
     <div id="app">
+        <h1>Test the available fonts</h1>
         <div>
             <hr/>
-            <select>
-                <option>adf</option>
-                <option>ad2f</option>
-                <option>ad4sf</option>
-            </select> <button @click="uCounter++">Refresh</button>
+            <select v-model="sFont">
+                <option value="0" disabled>Select a font</option>
+                <option v-for="(item, idx) in fonts" :value="idx" v-html="item"></option>
+            </select>
+            <button @click="uCounter++">Refresh</button>
             <hr/>
         </div>
 

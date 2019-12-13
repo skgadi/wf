@@ -25,8 +25,8 @@
 }
 @font-face {
 	font-family: 'Univers Condensed';
-	src: url('uc_bold_oblique.eot');
-	src: local('☺'), url('uc_bold_oblique.woff') format('woff'), url('uc_bold_oblique.ttf') format('truetype'), url('uc_bold_oblique.svg') format('svg'), url('uc_bold_oblique.eot?#iefix') format('embedded-opentype');
+	src: url('uc_bold_italic.eot');
+	src: local('☺'), url('uc_bold_italic.woff') format('woff'), url('uc_bold_italic.ttf') format('truetype'), url('uc_bold_italic.svg') format('svg'), url('uc_bold_italic.eot?#iefix') format('embedded-opentype');
 	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
