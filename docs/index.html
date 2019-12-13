@@ -26,6 +26,11 @@
             </select>
             <button @click="uCounter++">Refresh</button>
             <hr/>
+            <div v-if="sFont != 0">
+                <pre>{{code}}</pre>
+                <pre>font-family: "{{fonts[sFont]}}";</pre>
+                <hr/>
+            </div>
         </div>
 
         <h1>Normal</h1>

@@ -24,7 +24,7 @@ var app = new Vue({
     watch: {
         sFont: function () {
             var cssId = this.sFont;
-            var cssLink = "https://cdn.jsdelivr.net/gh/skgadi/wf@latest/fonts/" + cssId + "/" + cssId + ".min.css";
+            var cssLink = "https://cdn.jsdelivr.net/gh/skgadi/wf/fonts/" + cssId + "/" + cssId + ".min.css";
             if (!document.getElementById(cssId)) {
                 var head = document.getElementsByTagName('head')[0];
                 var link = document.createElement('link');
@@ -37,6 +37,11 @@ var app = new Vue({
             }
             document.getElementById("app").style.fontFamily = "\"" + this.fonts[cssId] + "\"";
             console.log(this.fonts[cssId]);
+        }
+    },
+    computed: {
+        code: function () {
+            return "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/skgadi/wf/fonts/" + this.sFont + "/" + this.sFont + ".min.css\">";
         }
     },
     methods: {
