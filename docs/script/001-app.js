@@ -25,7 +25,7 @@ var app = new Vue({
     watch: {
         sFont: function () {
             var cssId = this.sFont;
-            var cssLink = "https://cdn.jsdelivr.net/gh/skgadi/wf/fonts/" + cssId + ".min.css";
+            var cssLink = "https://cdn.jsdelivr.net/gh/skgadi/wf@1.0/fonts/" + cssId + ".min.css";
             if (!document.getElementById(cssId)) {
                 var head = document.getElementsByTagName('head')[0];
                 var link = document.createElement('link');
@@ -41,7 +41,7 @@ var app = new Vue({
     },
     computed: {
         code: function () {
-            return "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/skgadi/wf/fonts/" + this.sFont + ".min.css\">";
+            return "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/skgadi/wf@1.0/fonts/" + this.sFont + ".min.css\">";
         }
     },
     methods: {

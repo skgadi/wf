@@ -35,6 +35,7 @@ body {
     height: 200px;
     border: 1px solid black;
     overflow: hidden;
+    margin: 8px 0;
  }
 #custom-text > textarea {
     width: 50%;
